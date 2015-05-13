@@ -56,8 +56,8 @@ class Scraper:
             try:
                 self.get_article_infos_and_log_into_DB(url)
             except:
-                print '[ERR] An error occurred when fetching an article from ', self.name, '( timestamp :', datetime.datetime.now(), ').'
-                print '   ---> ERR URL :', url
+                print "[ERR] An error occurred when fetching an article from ", self.name, "( timestamp :", datetime.datetime.now(), ")."
+                print "   ---> ERR URL :", url
 
     def keep_track_of(self, url):
         self.watched_urls.append(url)
