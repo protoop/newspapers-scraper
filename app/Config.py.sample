@@ -1,0 +1,18 @@
+# coding: utf-8
+from __future__ import unicode_literals
+
+class Config:
+
+    def __init__(self):
+        self.user_agent = {'User-agent': 'Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0'}
+        self.database_path = "/path/to/a/directory"
+        self.database_file_name = "database-name.db"
+
+    def get_user_agent(self):
+        return self.user_agent
+
+    def get_database_path(self):
+        return self.database_path
+
+    def get_database_file_name(self):
+        return self.database_file_name
