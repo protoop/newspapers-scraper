@@ -1,11 +1,10 @@
 # coding: utf-8
 from __future__ import unicode_literals
 import datetime
+from app.utils import ScraperHelper, Database
 
-from app.utils import ScrapperHelper, Database
 
-
-class Scrapper:
+class Scraper:
 
     def __init__(self):
         self.name = "L'Express"
@@ -18,8 +17,8 @@ class Scrapper:
 
     def start_scrapping_articles_found_on_homepage(self):
 
-        # Scrapper
-        sc = ScrapperHelper.ScrapperHelper()
+        # Scraper
+        sc = ScraperHelper.ScraperHelper()
         soup = sc.getSoupFromPage(self.homepage_url, 'ISO-8859-1')
 
         # Remove blogs
@@ -74,8 +73,8 @@ class Scrapper:
         return raw_time
 
     def get_article_infos_and_log_into_DB(self,url):
-        # Scrapper
-        sc_article = ScrapperHelper.ScrapperHelper()
+        # Scraper
+        sc_article = ScraperHelper.ScraperHelper()
         soup_article = sc_article.getSoupFromPage(url, 'ISO-8859-1')
         try:
             article_title = soup_article.select("h1")[0].text.strip()

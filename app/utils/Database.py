@@ -4,7 +4,7 @@ import sqlite3  #https://docs.python.org/2/library/sqlite3.html
 import os
 from time import strftime  #gmtime
 from app import Config
-import ScrapperHelper
+from . import ScraperHelper
 
 
 class NewspapersDatabase:
@@ -192,8 +192,8 @@ class NewspapersDatabase:
         res = self.c.fetchone()
         if res is not None:
             res = res[1]
-            dt_old = ScrapperHelper.ScrapperHelper().from_fake_datetime_to_datetime(res)
-            dt_new = ScrapperHelper.ScrapperHelper().from_fake_datetime_to_datetime(last_update_time_found)
+            dt_old = ScraperHelper.ScraperHelper().from_fake_datetime_to_datetime(res)
+            dt_new = ScraperHelper.ScraperHelper().from_fake_datetime_to_datetime(last_update_time_found)
             if (dt_new is not None) and (dt_old is not None):
                 if (dt_new - dt_old).total_seconds() > 0:
                     sql = """
@@ -263,7 +263,7 @@ class NewspapersDatabase:
 
             if id_article is not None:
 
-                sc = ScrapperHelper.ScrapperHelper()
+                sc = ScraperHelper.ScraperHelper()
                 # Create a timeline point (article creation)
                 self.insert_timeline_point_in_database(sc.from_fake_datetime_to_datetime(article_creation_time), 'creation_time', id_article)
 

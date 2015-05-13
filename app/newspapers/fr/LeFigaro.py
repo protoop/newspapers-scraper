@@ -1,10 +1,10 @@
 # coding: utf-8
 from __future__ import unicode_literals
 import datetime
-from app.utils import ScrapperHelper, Database
+from app.utils import ScraperHelper, Database
 
 
-class Scrapper:
+class Scraper:
 
     def __init__(self):
         self.name = 'Le Figaro'
@@ -17,8 +17,8 @@ class Scrapper:
 
     def start_scrapping_articles_found_on_homepage(self):
 
-        # Scrapper
-        sc = ScrapperHelper.ScrapperHelper()
+        # Scraper
+        sc = ScraperHelper.ScraperHelper()
         soup = sc.getSoupFromPage(self.homepage_url)
 
         # Main Column
@@ -106,8 +106,8 @@ class Scrapper:
         self.watched_urls.append(url)
 
     def get_article_infos_and_log_into_DB(self,url):
-        # Scrapper
-        sc_article = ScrapperHelper.ScrapperHelper()
+        # Scraper
+        sc_article = ScraperHelper.ScraperHelper()
         soup_article = sc_article.getSoupFromPage(url)
 
         [tag.extract() for tag in soup_article.select(".fig-tag-avant-premiere")]

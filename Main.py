@@ -5,19 +5,19 @@ from app.newspapers.fr import *
 
 newspapers_fr = []
 
-newspapers_fr.append(LeMonde.Scrapper())
-newspapers_fr.append(LeFigaro.Scrapper())
-newspapers_fr.append(VingtMinutes.Scrapper())
-newspapers_fr.append(MetroNews.Scrapper())
-newspapers_fr.append(DirectMatin.Scrapper())
-newspapers_fr.append(Lequipe.Scrapper())
-newspapers_fr.append(LeParisien.Scrapper())
-newspapers_fr.append(Lexpress.Scrapper())
-newspapers_fr.append(Liberation.Scrapper())
-newspapers_fr.append(LesEchos.Scrapper())
-newspapers_fr.append(OuestFrance.Scrapper())
-newspapers_fr.append(Challenges.Scrapper())
-newspapers_fr.append(TF1.Scrapper())
+newspapers_fr.append(LeMonde.Scraper())
+newspapers_fr.append(LeFigaro.Scraper())
+newspapers_fr.append(VingtMinutes.Scraper())
+newspapers_fr.append(MetroNews.Scraper())
+newspapers_fr.append(DirectMatin.Scraper())
+newspapers_fr.append(Lequipe.Scraper())
+newspapers_fr.append(LeParisien.Scraper())
+newspapers_fr.append(Lexpress.Scraper())
+newspapers_fr.append(Liberation.Scraper())
+newspapers_fr.append(LesEchos.Scraper())
+newspapers_fr.append(OuestFrance.Scraper())
+newspapers_fr.append(Challenges.Scraper())
+newspapers_fr.append(TF1.Scraper())
 
 # Start fetching
 print '--------------------------------------------------------------------------------'

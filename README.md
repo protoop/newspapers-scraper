@@ -1,6 +1,6 @@
-# Newspapers Scrapper
+# Newspapers Scraper
 
-**Newspapers Scrapper** is a Python script that allows you to keep track of articles from newspapers.
+**Newspapers Scraper** is a Python script that allows you to keep track of articles from newspapers.
 
 ## Setup
 
@@ -27,7 +27,7 @@ Edit scheduled tasks ("cronjobs") :
 
 Add this line at the bottom to scrap articles every 30 minutes :
 
-    */30 * * * * /usr/bin/python /path/to/scrapper/Main.py
+    */30 * * * * /usr/bin/python /path/to/Scraper/Main.py
 
 Save, and quit. That's all.
 
@@ -36,8 +36,8 @@ Save, and quit. That's all.
 * `Main.py` : script entry point
 * `Config.py` : config
 * `utils/Database.py` : connection to the sqlite3 database
-* `utils/ScrapperHelper.py` : very (few) basic helper functions
-* `app/newspapers/[language]/[newspaper].py` : the newspaper's articles scrappers
+* `utils/ScraperHelper.py` : very (few) basic helper functions
+* `app/newspapers/[language]/[newspaper].py` : the newspaper's articles Scrapers
 
 ## FAQ
 
@@ -49,7 +49,7 @@ Q. Which articles are kept or not kept ?
 
 A. Here is the rule of thumb :
 
-* The scrapper only keeps track of the articles displayed on the newspapers' homepages
+* The Scraper only keeps track of the articles displayed on the newspapers' homepages
 * The premium/restricted articles are never retained
 * The ads are never retained
 * The blog posts are never retained

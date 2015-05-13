@@ -1,3 +1,3 @@
-__all__ = ["Database", "ScrapperHelper"]
+__all__ = ["Database", "ScraperHelper"]
 from . import Database
-from . import ScrapperHelper
+from . import ScraperHelper

@@ -9,7 +9,7 @@ import pytz
 from app import Config
 
 
-class ScrapperHelper:
+class ScraperHelper:
 
     def __init__(self):
         config = Config.Config()
