@@ -32,8 +32,8 @@ class Scraper:
         articles = [r for r in articles if ("metrozap" not in r['href'] and "clubmetro" not in r['href'])]
         # Remove Games
         articles = [r for r in articles if ("/jeux/" not in r['href'] and "jeux." not in r['href'])]
-        # Remove Crosswords
-        articles = [r for r in articles if "/motsfleches/" not in r['href']]
+        # Remove Crosswords and Sudoku
+        articles = [r for r in articles if ("/motsfleches/" not in r['href'] and "/sudoku/" not in r['href'])]
         # Remove Blogs
         articles = [r for r in articles if "/blog/" not in r['href']]
 
