@@ -1,11 +1,9 @@
 # coding: utf-8
 from __future__ import unicode_literals
 import datetime
-
+import pytz
 import requests
 from bs4 import BeautifulSoup
-import pytz
-
 from app import Config
 
 

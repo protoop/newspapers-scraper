@@ -4,7 +4,7 @@ import sqlite3  #https://docs.python.org/2/library/sqlite3.html
 import os
 from time import strftime  #gmtime
 from app import Config
-from . import ScraperHelper
+from app.utils import ScraperHelper
 
 
 class NewspapersDatabase:
