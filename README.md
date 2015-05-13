@@ -6,20 +6,22 @@
 
 To start using the script :
 
-1. Install `pip` ([Source](https://pip.pypa.io/en/latest/installing.html)) :
+1) Install `pip` ([Source](https://pip.pypa.io/en/latest/installing.html)) :
+
 
     $ python https://bootstrap.pypa.io/get-pip.py
     
-2. Install required packages :
+2) Install required packages :
+
 
     $ pip install requests beautifulsoup4
     
-3. Configuration :
+3) Configuration :
 
 * Rename `Config.py.sample` to `Config.py`.
 * Open up the `Config.py` file and replace the `database_path` and the `database_file_name` by what you want.
 
-4. Create a new cronjob :
+4) Create a new cronjob :
 
 Edit scheduled tasks ("cronjobs") :
 
