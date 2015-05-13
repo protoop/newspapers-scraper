@@ -10,7 +10,7 @@ class Scrapper:
         self.name = 'Direct Matin'
         self.homepage_url = "http://www.directmatin.fr"
         self.watched_urls = []
-        self.db = Database.DatabaseJournaux()
+        self.db = Database.NewspapersDatabase()
         if not self.db.is_newspaper_in_database(self.name):
             self.db.insert_newspaper_in_database(self.name, self.homepage_url)
         self.newspaper_id = self.db.get_newspaper_id_from_database(self.name)

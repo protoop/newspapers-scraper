@@ -7,7 +7,7 @@ from app import Config
 import ScrapperHelper
 
 
-class DatabaseJournaux:
+class NewspapersDatabase:
     def __init__(self):
         config = Config.Config()
         os.chdir(config.get_database_path())
