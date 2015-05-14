@@ -7,7 +7,7 @@ from app.utils import ScraperHelper, Database
 class Scraper:
 
     def __init__(self):
-        self.name = 'Libération'
+        self.name = 'Liberation'
         self.homepage_url = "http://www.liberation.fr"
         self.watched_urls = []
         self.db = Database.NewspapersDatabase()
