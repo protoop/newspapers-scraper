@@ -28,9 +28,9 @@ for paper in newspapers_fr:
     try:
         paper.start_scrapping_articles_found_on_homepage()
     except:
-        print "[ERR] An error occurred when fetching ", paper.name, "( timestamp :", datetime.datetime.now(), ")"
+        print "[ERR] An error occurred when fetching %s (timestamp : %s)" % (paper.name, datetime.datetime.now())
 
 script_end_time = datetime.datetime.now()
 elapsed_time = script_end_time - script_start_time
-print 'Fetch script ended ( timestamp :', script_end_time, \
-      ', took %s min, %s sec' % divmod(elapsed_time.days * 86400 + elapsed_time.seconds, 60), ')'
+print "Fetch script ended ( timestamp : %s, " \
+      "took %s min, %s sec )" % ((script_end_time,) + divmod(elapsed_time.days * 86400 + elapsed_time.seconds, 60))
