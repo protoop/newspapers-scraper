@@ -18,6 +18,7 @@ newspapers_fr.append(LesEchos.Scraper())
 newspapers_fr.append(OuestFrance.Scraper())
 newspapers_fr.append(Challenges.Scraper())
 newspapers_fr.append(TF1.Scraper())
+newspapers_fr.append(LaTribune.Scraper())
 
 # Start fetching
 print '--------------------------------------------------------------------------------'
