@@ -1,7 +1,8 @@
-__all__ = ["Challenges", "DirectMatin", "LeFigaro", "LeMonde", "LeParisien", "Lequipe", "LesEchos", "Lexpress",
-           "Liberation", "MetroNews", "OuestFrance", "TF1", "VingtMinutes"]
+__all__ = ["Challenges", "DirectMatin", "LaTribune", "LeFigaro", "LeMonde", "LeParisien", "Lequipe", "LesEchos",
+           "Lexpress", "Liberation", "MetroNews", "OuestFrance", "TF1", "VingtMinutes"]
 import Challenges
 import DirectMatin
+import LaTribune
 import LeFigaro
 import LeMonde
 import LeParisien
