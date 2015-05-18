@@ -72,7 +72,7 @@ class Scraper:
         #we now have sth like :  09 05 2015, 12h13    <-- length==17
         #we want sth like :  2015-05-09 12:13:00+02:00
         raw_time = raw_time[6:10] + '-' + raw_time[3:5] + '-' + raw_time[0:2]\
-                                  + ' ' + raw_time[12:14] + ':' + raw_time[15:17] + ':00+2:00'
+                                  + ' ' + raw_time[12:14] + ':' + raw_time[15:17] + ':00+02:00'
         return raw_time
 
     def get_article_infos_and_log_into_DB(self,url):
