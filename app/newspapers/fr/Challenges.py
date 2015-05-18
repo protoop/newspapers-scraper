@@ -81,6 +81,8 @@ class Scraper:
         except:
             article_image_url = ''
 
-        article_themes = [link.text.strip() for link in soup_article.select(".obs-breadcrumbs a") if ('Challenges' != link.text.strip())]
+        # (No error in the breadcrumb's class name)
+        article_themes = [link.text.strip() for link in soup_article.select(".obs-breadcrumbs a")
+                                                if ('Challenges' != link.text.strip())]
 
         self.db.log_article_to_database(self.newspaper_id, url, article_title, article_themes, article_creation_time, article_update_time, article_image_url)
