@@ -83,5 +83,6 @@ class Scraper:
         except:
             article_image_url = ''
 
-        article_themes = [link.text for link in soup_article.select("#b-nav a") if ('accueil' != link.text and '>' != link.text)]
+        article_themes = [link.text.strip() for link in soup_article.select("#b-nav a")
+                                            if ('accueil' != link.text.strip() and '>' != link.text)]
         self.db.log_article_to_database(self.newspaper_id, url, article_title, article_themes, article_creation_time, article_update_time, article_image_url)
