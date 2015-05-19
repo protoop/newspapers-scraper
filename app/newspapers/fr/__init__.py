@@ -1,11 +1,12 @@
-__all__ = ["BFMTV", "Capital", "Challenges", "DirectMatin", "Europe1", "FranceInter", "LaCroix", "LaTribune",
-           "LeFigaro", "LeMonde", "LeParisien", "Lequipe", "LesEchos", "Lexpress", "Lhumanite", "Liberation",
-           "MetroNews", "NouvelObs", "OuestFrance", "TF1", "ValeursActuelles","VingtMinutes"]
+__all__ = ["BFMTV", "Capital", "Challenges", "DirectMatin", "Europe1", "France24", "FranceInter", "LaCroix",
+           "LaTribune", "LeFigaro", "LeMonde", "LeParisien", "Lequipe", "LesEchos", "Lexpress", "Lhumanite",
+           "Liberation", "MetroNews", "NouvelObs", "OuestFrance", "TF1", "ValeursActuelles","VingtMinutes"]
 import BFMTV
 import Capital
 import Challenges
 import DirectMatin
 import Europe1
+import France24
 import FranceInter
 import LaCroix
 import LaTribune
