@@ -27,6 +27,7 @@ newspapers_fr.append(Europe1.Scraper())
 newspapers_fr.append(ValeursActuelles.Scraper())
 newspapers_fr.append(BFMTV.Scraper())
 newspapers_fr.append(FranceInter.Scraper())
+newspapers_fr.append(France24.Scraper())
 
 # Start fetching
 print '--------------------------------------------------------------------------------'

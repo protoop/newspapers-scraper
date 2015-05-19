@@ -8,7 +8,6 @@ Source: [http://fr.wikipedia.org/wiki/Presse_en_France](http://fr.wikipedia.org/
     [ ] http://www.closermag.fr
     [ ] http://www.courrierinternational.com
     [ ] http://www.elle.fr
-    [ ] http://www.france24.com/fr
     [ ] http://www.franceinfo.fr
     [ ] http://www.francesoir.fr
     [ ] http://www.francetvinfo.fr
@@ -42,6 +41,7 @@ Source: [http://fr.wikipedia.org/wiki/Presse_en_France](http://fr.wikipedia.org/
     [x] http://www.challenges.fr
     [x] http://www.directmatin.fr
     [x] http://www.europe1.fr
+    [x] http://www.france24.com/fr
     [x] http://www.franceinter.fr
     [x] http://www.la-croix.com
     [x] http://www.latribune.fr
