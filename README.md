@@ -36,9 +36,9 @@ Save, and quit. That's all.
 ## Overview
 
 * `Main.py` : script entry point
-* `Config.py` : config
-* `utils/Database.py` : connection to the sqlite3 database
-* `utils/ScraperHelper.py` : very (few) basic helper functions
+* `app/Config.py` : config
+* `app/utils/Database.py` : connection to the sqlite3 database
+* `app/utils/ScraperHelper.py` : very (few) basic helper functions
 * `app/newspapers/[language]/[newspaper].py` : the newspaper's articles Scrapers
 
 ## FAQ
